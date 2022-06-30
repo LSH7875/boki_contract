@@ -1,12 +1,12 @@
 # boki smart contract practice
 -----
 
-# 1. package install
+## 1. package install
 ```bash
 npm i
 ```
 
-# 2. fix node_modules
+## 2. fix node_modules
 You should fix erc721a/contracts/ERC721A.sol.
 Change _mint function like below code.
 
@@ -55,16 +55,16 @@ function _mint(
         _afterTokenTransfers(address(0), to, startTokenId, quantity);
     }
 ```
-# 3. enter the .env, .secret
+## 3. enter the .env, .secret
 Enter your `etherscan api key`,`alchemy https key`, `account mnemonic`. 
 
-# 4. migrate contract
+## 4. migrate contract
 
 ```bash
 truffle migrate --network rinkeby
 ```
 
-# 4. verify your contract in Etherscan
+## 5. verify your contract in Etherscan
 
 ```bash
 $ truffle run verify Boki --network rinkeby
